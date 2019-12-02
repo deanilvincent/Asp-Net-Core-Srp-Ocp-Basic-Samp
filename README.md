@@ -40,4 +40,4 @@ OCP states that the software entities (classes or methods) should be open for ex
 
 In our sample code above, our solution shows that it's open for extension because what if in the future we create another email notification for manager or for another users? What we can do with that is just simply inherit the `IEmailNotification` and do their custom implementation. Of course, our `IEmailNotifcation` is closed for modification since it's implemented to our classes which has the same approach but different in their custom implementation. If there will changes with `IEmailNotification`, then all the children classes must implement that additional or modified contract.
 
-`EmailNotification` is just a simple scenario on how we can implement OCP, there are a lot of scenarios where we can do the same logical approach. Some of the benefits of this are, clean and easy to maintain.
+`EmailNotification` is just a simple scenario on how we can implement OCP, there are a lot of good scenarios where we can do the same logical approach so try it on your own. Some of the benefits of this are, clean and easy to maintain.
