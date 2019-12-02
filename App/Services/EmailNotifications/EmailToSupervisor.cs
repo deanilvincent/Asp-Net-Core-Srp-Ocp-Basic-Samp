@@ -5,7 +5,7 @@ using App.ServiceContracts;
 
 namespace App.Services.EmailNotifications
 {
-    public class EmailToSupervisor : INotification
+    public class EmailToSupervisor : IEmailNotification
     {
         public bool Rule(string rule)
         {

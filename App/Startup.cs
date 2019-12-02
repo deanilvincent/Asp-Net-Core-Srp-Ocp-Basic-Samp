@@ -26,10 +26,10 @@ namespace App
             services.AddScoped<IEmailNotificationService, EmailNotificationService>(); 
 
             // ocp services
-            services.AddScoped<List<INotification>, List<INotification>>();
-            services.AddScoped<INotification, EmailToJanitor>();
-            services.AddScoped<INotification, EmailToSupervisor>();
-            services.AddScoped<INotification, EmailToWaitress>();
+            services.AddScoped<List<IEmailNotification>, List<IEmailNotification>>();
+            services.AddScoped<IEmailNotification, EmailToJanitor>();
+            services.AddScoped<IEmailNotification, EmailToSupervisor>();
+            services.AddScoped<IEmailNotification, EmailToWaitress>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

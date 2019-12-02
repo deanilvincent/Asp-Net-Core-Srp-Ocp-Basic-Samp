@@ -7,9 +7,9 @@ namespace App.Services.EmailNotifications
 {
     public class EmailNotificationService : IEmailNotificationService
     {
-        private readonly List<INotification> notifications;
+        private readonly List<IEmailNotification> notifications;
 
-        public EmailNotificationService(List<INotification> notifications)
+        public EmailNotificationService(List<IEmailNotification> notifications)
         {
             this.notifications = notifications;
         }
